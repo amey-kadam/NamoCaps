@@ -1,0 +1,151 @@
+/* Reset any margin or padding that may be causing the issue */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the navbar sticks to the top */
+.navbar {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+
+.nav-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    display: none;
+}
+
+.nav-links.md\:flex {
+    display: flex;
+}
+
+.nav-links a {
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4F46E5;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    width: 12rem; 
+    padding-left: 2.5rem; 
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    border-color: #6366f1; 
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); 
+}
+
+.search-bar i {
+    position: absolute;
+    left: 1rem; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af; 
+}
+
+
+
+/* Cart Button Styling */
+.cart-button {
+    position: relative;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+}
+
+.cart-button span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #4F46E5;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+    display: none;
+}
+
+.mobile-menu-button.md\:hidden {
+    display: block;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    z-index: 40;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+.mobile-menu .close-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.mobile-menu a {
+    display: block;
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #4F46E5;
+}
