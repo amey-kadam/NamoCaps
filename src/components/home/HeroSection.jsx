@@ -1,4 +1,7 @@
 // src/components/home/HeroSection.jsx
+import { Link } from 'react-router-dom';
+
+
 export default function HeroSection() {
     return (
         <section className="pt-24 pb-12 px-4">
@@ -9,9 +12,12 @@ export default function HeroSection() {
                 <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
                     Discover our unique collection of hats that express your personality and style
                 </p>
-                <button className="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
-                    Shop Now
-                </button>
+             
+
+                <Link to="/category/latest" className="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
+                     <b>Latest
+                        </b>
+                </Link>
             </div>
         </section>
     );

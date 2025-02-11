@@ -1,4 +1,4 @@
-// src/data/products.js
+// src/data/products.jsx
 export const products = [
     {
         name: "Zen Buddha Cap",
@@ -17,11 +17,6 @@ export const products = [
         category: "Quotes",
         price: 24.99,
         image: "https://images.unsplash.com/photo-1521369909029-2afed882baee"
-    },
-    {
-        name: "Batman Snapback",
-        category: "Comics",
-        price: 39.99,
-        image: "https://images.unsplash.com/photo-1533827432537-70133748f5c8"
     }
 ];
+
